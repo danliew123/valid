@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valid</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form novalidate>
+      <div class="form-row">
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" required minlength="8" />
+      </div>
+      <span class="email-error"></span>
+
+      <div class="form-row">
+        <label for="country">Country</label>
+        <select name="country" id="country">
+          <option value="sg">Singapore</option>
+          <option value="ms">Malaysia</option>
+          <option value="ch">China</option>
+          <option value="th">Thailand</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label for="ZIP">ZIP: </label>
+        <input type="text" name="ZIP" id="ZIP" required />
+      </div>
+      <span class="error"></span>
+
+      <div class="form-row">
+        <label for="password">Password: </label>
+        <input type="password" name="password" id="password" required />
+      </div>
+      <span class="error"></span>
+
+      <div class="form-row">
+        <label for="confirm-password">Confirm password: </label>
+        <input
+          type="password"
+          name="confirm-password"
+          id="confirm-password"
+          required
+        />
+      </div>
+      <span class="error"></span>
+
+      <button>Submit</button>
+    </form>
+    <script src="index.js"></script>
+  </body>
+</html>
